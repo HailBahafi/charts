@@ -5,7 +5,12 @@ const mongoose = require('mongoose')
 const PORT = process.env.PORT || 3001;
 require('dotenv').config({ path: './dev.env' });
 
-app.use(cors())
+app.use(cors({
+    origin: 'http://localhost:3000',
+    methods: ['GET'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json())
 
 const UserModel=require('./models/Users')
