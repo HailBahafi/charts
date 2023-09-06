@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 require('dotenv').config({ path: './dev.env' });
 
 app.use(cors({
-    origin: 'http://localhost:3000/',
+    origin: 'http://localhost:3000',
     methods: ['GET'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
