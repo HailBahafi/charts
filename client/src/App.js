@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/user")
+      .get("/user")
       .then((res) => {
         const filteredData = res.data.filter(
           (item) => item.value !== null && item.value !== ""
