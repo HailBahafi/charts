@@ -19,6 +19,8 @@ function App() {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
 
+  axios.defaults.withCredentials = false
+
   useEffect(() => {
     axios
       .get("https://interactive-data-visualization-dashboard-api-server.vercel.app/user")
