@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 require('dotenv').config({ path: './dev.env' });
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://interactive-data-visualization-dashboard-frontend.vercel.app',
     methods: ['GET'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
