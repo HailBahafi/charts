@@ -32,9 +32,9 @@ mongoose.connect(`mongodb+srv://Hail:${password}@cluster0.ma16vla.mongodb.net/ME
 
 app.get('/user', async (req, res) => {
     try {
+        console.log('Hello')
         const Users = await UserModel.find();
         res.status(200).json(Users);
-        console.log('Hello')
     } catch (error) {
         console.error('Error fetching users:', error);
         res.status(500).send('Internal server error');
