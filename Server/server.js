@@ -2,11 +2,11 @@ const express = require('express')
 const app = express()
 const cors =require('cors')
 const mongoose = require('mongoose')
-const PORT = process.env.PORT || 3001;
+// const PORT = process.env.PORT || ;
 require('dotenv').config({ path: './dev.env' });
 
 app.use(cors({
-    origin: 'http://localhost:3000/user',
+    origin: 'http://localhost:3000/',
     methods: ['GET'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
@@ -41,6 +41,6 @@ app.get('/user', async (req, res) => {
     }
 })
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+app.listen(3001, () => {
+    console.log(`Server running on port 3001`);
 });
