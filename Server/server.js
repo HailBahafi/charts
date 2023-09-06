@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const cors =require('cors')
 const mongoose = require('mongoose')
+const PORT = process.env.PORT || 3001;
 require('dotenv').config({ path: './dev.env' });
 
 app.use(cors())
@@ -34,6 +35,6 @@ app.get('/user', async (req, res) => {
     }
 })
 
-app.listen("3001" , ()=>{
-    console.log("server working")
-})
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
