@@ -16,7 +16,7 @@ app.use(express.json())
 const UserModel=require('./models/Users')
 
 const password = process.env.PASSWORD
-console.log("password:", password)
+// console.log("password:", password)
 
 mongoose.connect(`mongodb+srv://Hail:${password}@cluster0.ma16vla.mongodb.net/MERN_STACK_ASSIGNMENT?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
