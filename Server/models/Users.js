@@ -52,18 +52,10 @@ const UserSchema = new mongoose.Schema({
     type: String,
     default: "Unknown",
   },
-  insight: {
-    type: String,
-    default: "Unknown",
-  },
-  added: {
-    type: String,
-    default: "Unknown",
-  },
-  published: {
-    type: String,
-    default: "Unknown",
-  },
+  // insight: {
+  //   type: String,
+  //   default: "Unknown",
+  // },
   source: {
     type: String,
     default: "Unknown",

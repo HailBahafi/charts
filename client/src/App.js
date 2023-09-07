@@ -19,7 +19,6 @@ function App() {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
 
-  axios.defaults.withCredentials = true
 
   useEffect(() => {
     axios
