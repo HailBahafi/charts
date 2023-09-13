@@ -49,14 +49,22 @@ function Topic({ data }) {
 
   const [chartData, setChartData] = useState({
     labels: ["Topics"],
+    data: [1, 2, 3],
     datasets: [
       {
+        label: "Intensity",
+        data: [0],
         backgroundColor: [
           "rgba(75,192,192,1)",
           "#ecf0f1",
           "#f0331a",
           "#f3ba2f",
           "#2a71d0",
+          "#ff5733",
+          "#59a8e4",
+          "#ffbf00",
+          "#00a86b",
+          "#c20078",
         ],
         borderColor: "black",
         borderWidth: 2,
