@@ -5,11 +5,12 @@ const mongoose = require('mongoose')
 // const PORT = process.env.PORT || ;
 require('dotenv').config({ path: './dev.env' });
 
-app.use(cors({
-    origin: 'https://interactive-data-visualization-dashboard-frontend.vercel.app',
-    methods: ['GET'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
+// app.use(cors({
+//     origin: 'https://interactive-data-visualization-dashboard-frontend.vercel.app',
+//     methods: ['GET'],
+//     allowedHeaders: ['Content-Type', 'Authorization']
+// }));
+app.use(cors())
 
 app.use(express.json())
 

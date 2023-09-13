@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://interactive-data-visualization-dashboard-api-server.vercel.app/user")
+      .get("http://localhost:3001/user")
       .then((res) => {
         const filteredData = res.data.filter(
           (item) => item.value !== null && item.value !== ""
