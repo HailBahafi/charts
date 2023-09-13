@@ -22,7 +22,7 @@ function App() {
   // http://localhost:3001/user
   useEffect(() => {
     axios
-      .get("https://datavisualizationdashboardapi-production.up.railway.app/user")
+      .get("https://data-visualization-dashboard-api.vercel.app/user")
       .then((res) => {
         const filteredData = res.data.filter(
           (item) => item.value !== null && item.value !== ""
