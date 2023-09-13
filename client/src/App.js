@@ -19,10 +19,10 @@ function App() {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
 
-
+  // http://localhost:3001/user
   useEffect(() => {
     axios
-      .get("http://localhost:3001/user")
+      .get("https://datavisualizationdashboardapi-production.up.railway.app/user")
       .then((res) => {
         const filteredData = res.data.filter(
           (item) => item.value !== null && item.value !== ""
